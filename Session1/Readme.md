@@ -93,8 +93,9 @@ Project Link: [gaju27/eva4phase2](https://github.com/gaju27/eva4phase2)
 
 # Results
 
-Input Labrador Dog image :point_down: will be uploaded via Insomnia that will trigger AWS Lambda :arrow_right: Execute the Mobilenet network :arrow_right: Classify the input image and return the response to Insomnia.
-
+-   Input Labrador Dog image :point_down: will be uploaded via Insomnia that will trigger AWS Lambda :arrow_right: Execute the Mobilenet network :arrow_right: Classify the input image and return the response to Insomnia. 
+-   MobileNet_V2 is correctly predicting the [class](https://gist.github.com/yrevar/942d3a0ac09ec9e5eb3a) as 208: 'Labrador retriever'
+   
 ![dog](https://github.com/Gaju27/eva4phase2/blob/master/git_store_house/Yellow-Labrador-Retriever.jpg)
 
 ![image](https://github.com/Gaju27/eva4phase2/blob/master/Session1/outcome1.JPG)
