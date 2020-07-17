@@ -70,11 +70,12 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Gajanana Ganjigatti - [Gaju_on_twitter](https://twitter.com/Gajucg)
 
-Project Link: [gaju27/eva4](https://github.com/gaju27/eva4phase2)
+Project Link: [gaju27/eva4phase2](https://github.com/gaju27/eva4phase2)
 
 <!-- GROUP MEMBERS -->
 ## Group Members
   - [Anilkumar N Bhatt](https://github.com/anilbhatt1)
+  - [Gajanana Ganjigatti](https://github.com/gaju27)
   - [Maruthi Srinivas](https://github.com/mmaruthi)
   - [Sridevi B](https://github.com/sridevibonthu)
   - [SMAG TEAM](https://github.com/SMAGEVA4/session1/tree/master/Session1) This is our team github account
@@ -89,9 +90,6 @@ Project Link: [gaju27/eva4](https://github.com/gaju27/eva4phase2)
 After Calling the AWS :cloud: Rest end Point using insomnia tool for given [dog image click here](https://github.com/Gaju27/eva4phase2/blob/master/git_store_house/Yellow-Labrador-Retriever.jpg)! :point_left:
 
 ![image](https://github.com/Gaju27/eva4phase2/blob/master/Session1/outcome1.JPG)
-
-
-Thank to our mentor [Rohan Shravan](https://www.linkedin.com/in/rohanshravan/) who made it very easy to understand.
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
