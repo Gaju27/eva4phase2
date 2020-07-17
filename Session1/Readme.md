@@ -90,10 +90,13 @@ Project Link: [gaju27/eva4phase2](https://github.com/gaju27/eva4phase2)
 ## Mentor
 
 * [Rohan Shravan](https://www.linkedin.com/in/rohanshravan/)
+* [The School of A.I.](https://theschoolof.ai/)
 
 # Results
 
-After Calling the AWS :cloud: Rest end Point using insomnia tool for given [dog image click here](https://github.com/Gaju27/eva4phase2/blob/master/git_store_house/Yellow-Labrador-Retriever.jpg)! :point_left:
+Input Labrador Dog image :point_down: will be uploaded via Insomnia that will trigger AWS Lambda :arrow_right: Execute the Mobilenet network :arrow_right: Classify the input image and return the response to Insomnia.
+
+![dog](https://github.com/Gaju27/eva4phase2/blob/master/git_store_house/Yellow-Labrador-Retriever.jpg)
 
 ![image](https://github.com/Gaju27/eva4phase2/blob/master/Session1/outcome1.JPG)
 
