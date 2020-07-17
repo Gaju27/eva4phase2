@@ -12,7 +12,7 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-# Deploying mobilenet on AWS ![image](https://github.com/Gaju27/eva4phase2/blob/master/git_store_house/aws.JPG)
+# Deploying MobileNet V2 on AWS ![image](https://github.com/Gaju27/eva4phase2/blob/master/git_store_house/aws.JPG)
 ________
 
 <!-- TABLE OF CONTENTS -->
