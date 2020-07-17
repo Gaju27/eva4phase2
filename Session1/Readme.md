@@ -20,7 +20,7 @@ ________
 
 * [Configuration](#configuration)
     * [Virtual Box](#virtual-box)
-    * [Aws](#aws)
+    * [AWS](#aws)
     * [Serverless](#serverless)
 * [Prerequisites](#prerequisites)
 * [License](#license)
@@ -37,16 +37,17 @@ ________
       
       Login with password: `osboxes.org` and after that create your [own user account](https://vitux.com/a-beginners-guide-to-user-management-on-ubuntu/)
       
-      Install mentioned below requirement
+      Install below mentioned requirements
         
         1. [miniconda](https://docs.conda.io/en/latest/miniconda.html)
         2. Visual Studio Code --> you can find this in ubuntu software centre
         3. [Docker](https://docs.docker.com/engine/install/ubuntu/)
         4. [Node.js](https://www.geeksforgeeks.org/installation-of-node-js-on-linux/)
-        6. [serverless](https://www.serverless.com/)
+        6. [Serverless](https://www.serverless.com/)
         
-   -  #### Aws
+   -  #### AWS
          Create user [IAM](https://docs.aws.amazon.com/rekognition/latest/dg/setting-up.html)
+         
          Create [S3 BUCKET](https://docs.aws.amazon.com/quickstarts/latest/s3backup/step-1-create-bucket.html)
          
    -  #### Serverless         
