@@ -52,12 +52,13 @@ ________
    -  #### Serverless         
          Setup with [Serverless](https://www.serverless.com/framework/docs/providers/aws/cli-reference/config-credentials/)
          
-         1. Serverless will help us to deploy AWS :cloud: lambda function from ubuntu local to AWS
+         1. Serverless will help us to deploy AWS lambda function from ubuntu local to AWS :cloud:
+         2. Mainly two file are involved in deploying lambda function - [handler.py](https://github.com/Gaju27/eva4phase2/blob/master/Session1/handler.py) and [Serverless.yml](https://github.com/Gaju27/eva4phase2/blob/master/Session1/serverless.yml)
          
 ## Prerequisites
 
 * [Linux](https://www.tutorialspoint.com/ubuntu/index.htm)
-* [Python 3.8](https://www.python.org/downloads/) and Above
+* [Python 3.8](https://www.python.org/downloads/) or Above
 * [AWS Account](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc)
 * [Serverless](https://www.serverless.com/) 
 * [Insomnia](https://insomnia.rest/download/)
@@ -71,7 +72,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Gajanana Ganjigatti - [Gaju_on_twitter](https://twitter.com/Gajucg)
+Gajanana Ganjigatti 
+   - [Gaju_on_Twitter](https://twitter.com/Gajucg)
+   - [Gaju_on_LinkedIn](https://www.linkedin.com/in/gajanana-ganjigatti/)
 
 Project Link: [gaju27/eva4phase2](https://github.com/gaju27/eva4phase2)
 
