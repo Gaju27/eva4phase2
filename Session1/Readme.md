@@ -20,7 +20,7 @@ ________
 
 * [Configuration](#configuration)
     * [Virtual Box](#virtual-box)
-    * [Asw](#aws)
+    * [Aws](#aws)
     * [Serverless](#serverless)
 * [Prerequisites](#prerequisites)
 * [License](#license)
@@ -35,21 +35,24 @@ ________
    -  #### Virtual Box 
       Please install [Virtual box](https://www.virtualbox.org/wiki/Downloads)
       
-      Login with password: `osboxes.org` and after create your [own user](https://vitux.com/a-beginners-guide-to-user-management-on-ubuntu/)
+      Login with password: `osboxes.org` and after that create your [own user account](https://vitux.com/a-beginners-guide-to-user-management-on-ubuntu/)
       
-      Install mentioned below softwares
+      Install mentioned below requirement
         
         1. [miniconda](https://docs.conda.io/en/latest/miniconda.html)
-        2. vscode --> you find this in ubutu software
+        2. Visual Studio Code --> you can find this in ubuntu software centre
         3. [Docker](https://docs.docker.com/engine/install/ubuntu/)
         4. [Node.js](https://www.geeksforgeeks.org/installation-of-node-js-on-linux/)
         6. [serverless](https://www.serverless.com/)
         
    -  #### Aws
          Create user [IAM](https://docs.aws.amazon.com/rekognition/latest/dg/setting-up.html)
+         Create [S3 BUCKET](https://docs.aws.amazon.com/quickstarts/latest/s3backup/step-1-create-bucket.html)
          
    -  #### Serverless         
          Setup with [Serverless](https://www.serverless.com/framework/docs/providers/aws/cli-reference/config-credentials/)
+         
+         1. Serverless will help us to deploy AWS :cloud: lambda function from ubuntu local to AWS
          
 ## Prerequisites
 
