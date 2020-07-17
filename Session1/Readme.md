@@ -89,8 +89,7 @@ Project Link: [gaju27/eva4phase2](https://github.com/gaju27/eva4phase2)
 <!-- MENTOR -->
 ## Mentor
 
-* [Rohan Shravan](https://www.linkedin.com/in/rohanshravan/)
-* [The School of A.I.](https://theschoolof.ai/)
+* [Rohan Shravan](https://www.linkedin.com/in/rohanshravan/) , [The School of A.I.](https://theschoolof.ai/)
 
 # Results
 
