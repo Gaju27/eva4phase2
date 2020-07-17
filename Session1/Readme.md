@@ -53,7 +53,7 @@ ________
          Setup with [Serverless](https://www.serverless.com/framework/docs/providers/aws/cli-reference/config-credentials/)
          
          1. Serverless will help us to deploy AWS lambda function from ubuntu local to AWS :cloud:
-         2. Mainly two file are involved in deploying lambda function - [handler.py](https://github.com/Gaju27/eva4phase2/blob/master/Session1/handler.py) and [Serverless.yml](https://github.com/Gaju27/eva4phase2/blob/master/Session1/serverless.yml)
+         2. Mainly two files are involved in deploying lambda function - [handler.py](https://github.com/Gaju27/eva4phase2/blob/master/Session1/handler.py) and [Serverless.yml](https://github.com/Gaju27/eva4phase2/blob/master/Session1/serverless.yml)
          
 ## Prerequisites
 
@@ -84,7 +84,7 @@ Project Link: [gaju27/eva4phase2](https://github.com/gaju27/eva4phase2)
   - [Gajanana Ganjigatti](https://github.com/gaju27)
   - [Maruthi Srinivas](https://github.com/mmaruthi)
   - [Sridevi B](https://github.com/sridevibonthu)
-  - [SMAG TEAM](https://github.com/SMAGEVA4/session1/tree/master/Session1) This is our team github account
+  - [SMAG TEAM](https://github.com/SMAGEVA4/session1/tree/master/Session1) :performing_arts: team github account
 
 <!-- MENTOR -->
 ## Mentor
