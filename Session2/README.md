@@ -43,8 +43,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- GROUP MEMBERS -->
 ## Group Members
-  - [Anilkumar N Bhatt](https://github.com/anilbhatt1) , [Anil_on_LinkedIn](https://www.linkedin.com/in/anilkumar-n-bhatt/)
   - [Gajanana Ganjigatti](https://github.com/gaju27) , [Gaju_on_LinkedIn](https://www.linkedin.com/in/gajanana-ganjigatti/)
+  - [Anilkumar N Bhatt](https://github.com/anilbhatt1) , [Anil_on_LinkedIn](https://www.linkedin.com/in/anilkumar-n-bhatt/)
   - [Maruthi Srinivas](https://github.com/mmaruthi) , [Maruthi_on_LinkedIn](https://www.linkedin.com/in/maruthi-srinivas-m/)
   - [Sridevi B](https://github.com/sridevibonthu) , [Sridevi_on_LinkedIn](https://www.linkedin.com/in/sridevi-bonthu/)
   - [SMAG TEAM](https://github.com/SMAGEVA4/session1/tree/master/Session1) :performing_arts: team github account
@@ -61,7 +61,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - Took the images from google drive shared location where images are collected by crowd-souring. Total 19318 images belonging to 4 flying objects were collected.
 - These images were located in 4 folders 'Flying Birds', 'Large QuadCopters', 'Small QuadCopters' and 'Winged Drones'. 
 - Images from all these folders were brought into a zip file named 'ThumbnailData.zip' and saved to personal gdrive folder. Code base listed below.
-- https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S2_Mobilenet_QuadCopters_Lambda/EVA4P2_S2_zip_file_creation.ipynb
+- https://github.com/Gaju27/eva4phase2/blob/master/Session2/EVA4P2_S2_zip_file_creation.ipynb
 #### Part: 2 (Model Training)
 - Images from ThumbnailData.zip was extracted and split into training and testing datasets based on 70:30 ratio. 
 - Following transforms were applied to these images so that more variety of images will be available during training apart from the original ones.
@@ -77,7 +77,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - To resolve this, final layers were unfrozen by setting requires_grad as True 
 - This way model was given chance to learn these classes during training. 
 - Also classifier layer was modified to take 4 classes instead of 1000 imagenet classes. Code base listed below.
-https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S2_Mobilenet_QuadCopters_Lambda/EVA4P2_S2_MobilenetV2_V7.ipynb
+ https://github.com/Gaju27/eva4phase2/blob/master/Session2/EVA4P2_S2_MobilenetV2_V.ipynb
 
 
 <!-- RESIZE STRATEGY -->
@@ -107,7 +107,7 @@ https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S2_Mobilenet
 
 <!-- GRAPHS -->
 ## Accuracy, Train Loss, Test Loss vs Epochs graphs for train and test
-![Graphs](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S2_Mobilenet_QuadCopters_Lambda/Images/Train_Test_Accuracies.png)
+![Graphs](https://github.com/Gaju27/eva4phase2/blob/master/Session2/Images/Train_Test_Accuracies.png)
 
 <!-- MISCLASSIFIED IMAGES -->
 ## 10 Misclassified Images of each of the 4 classes
@@ -117,12 +117,12 @@ https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S2_Mobilenet
 - WD -> Winged Drones
 - SQ -> Small Quadcopters
 
-![Misclassified Images](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S2_Mobilenet_QuadCopters_Lambda/Images/Misclassified.jpg)
+![Misclassified Images](https://github.com/Gaju27/eva4phase2/blob/master/Session2/Images/Misclassified.jpg)
 
 <!-- CORRECTLY CLASSIFIED IMAGES -->
 ## 25 Correctly classified Images 
 
-![Correctly classified Images](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S2_Mobilenet_QuadCopters_Lambda/Images/Correctly_Classified.jpg)
+![Correctly classified Images](https://github.com/Gaju27/eva4phase2/blob/master/Session2/Images/Correctly_Classified.jpg)
 
 # Results
 
@@ -131,9 +131,9 @@ https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S2_Mobilenet
 
 -   MobileNet_V2 is correctly predicting the [class](https://gist.github.com/yrevar/942d3a0ac09ec9e5eb3a) as 2: 'Large QuadCopters'
    
-![Large Quad](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S2_Mobilenet_QuadCopters_Lambda/Images/Test_LargeQuad.jpg)
+![Large Quad](https://github.com/Gaju27/eva4phase2/blob/master/Session2/Images/Test_LargeQuad.jpg)
 
-![image](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S2_Mobilenet_QuadCopters_Lambda/Images/Insomnia_Screenshot.jpg)
+![image](https://github.com/Gaju27/eva4phase2/blob/master/Session2/Images/Insomnia_Screenshot.jpg)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
