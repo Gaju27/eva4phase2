@@ -26,7 +26,6 @@ ________
 * [Face Swap](#face-swap)
 * [Webpage For Restful Api Call And Integrate It With Aws](#webpage)
 
-        
 ## Prerequisites
 
 * [Linux](https://www.tutorialspoint.com/ubuntu/index.htm)
@@ -38,23 +37,6 @@ ________
 * [Html](https://www.w3schools.com/html/)
 * [Jquery](https://jquery.com/)
 * [Dlib](http://dlib.net/)
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-<!-- GROUP MEMBERS -->
-## Group Members
-  - [Gajanana Ganjigatti](https://github.com/gaju27) , [Gaju_on_LinkedIn](https://www.linkedin.com/in/gajanana-ganjigatti/)
-  - [Anilkumar N Bhatt](https://github.com/anilbhatt1) , [Anil_on_LinkedIn](https://www.linkedin.com/in/anilkumar-n-bhatt/)
-  - [Sridevi B](https://github.com/sridevibonthu) , [Sridevi_on_LinkedIn](https://www.linkedin.com/in/sridevi-bonthu/)
-  - [SMAG TEAM](https://github.com/SMAGEVA4/session1/tree/master/Session1) :performing_arts: team github account
-
-<!-- MENTOR -->
-## Mentor
-
-* [Rohan Shravan](https://www.linkedin.com/in/rohanshravan/) , [The School of A.I.](https://theschoolof.ai/)
 
 <!-- FACE ALIGNMENT-->
 ## Face Alignment
@@ -104,7 +86,22 @@ Distributed under the MIT License. See `LICENSE` for more information.
     - We can take resnet url (assignment1) from S1 API pathway, mobilnet url (assignment 2) from S2 API pathway and face alignment url (assignment) from S3 API pathway we created in AWS.
 11. Accordingly modify index.html inside AWS S3 bucket to accommodate 3 bodies corresponding to 3 functions we created in upload.js
 
- 
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<!-- GROUP MEMBERS -->
+## Group Members
+  - [Gajanana Ganjigatti](https://github.com/gaju27) , [Gaju_on_LinkedIn](https://www.linkedin.com/in/gajanana-ganjigatti/)
+  - [Anilkumar N Bhatt](https://github.com/anilbhatt1) , [Anil_on_LinkedIn](https://www.linkedin.com/in/anilkumar-n-bhatt/)
+  - [Sridevi B](https://github.com/sridevibonthu) , [Sridevi_on_LinkedIn](https://www.linkedin.com/in/sridevi-bonthu/)
+  - [SMAG TEAM](https://github.com/SMAGEVA4/session1/tree/master/Session1) :performing_arts: team github account
+
+<!-- MENTOR -->
+## Mentor
+
+* [Rohan Shravan](https://www.linkedin.com/in/rohanshravan/) , [The School of A.I.](https://theschoolof.ai/)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
