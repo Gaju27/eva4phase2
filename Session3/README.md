@@ -20,7 +20,6 @@ ________
 * [License](#license)
 * [Group Members](#group-members)
 * [Mentor](#mentor)
-* [Approach](#Approach)
 * [Face Alignment](#face-alignment)
 * [Face Swap](#face-swap)
 * [Webpage](#webpage)
@@ -55,8 +54,26 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 * [Rohan Shravan](https://www.linkedin.com/in/rohanshravan/) , [The School of A.I.](https://theschoolof.ai/)
 
-<!-- APPROACH -->
-## Approach
+<!-- FACE ALIGNMENT-->
+## Face Alignment
+- In Face Alignment we will accept an input image and make it aligned as if the face is facing the camera
+- We are using 5 point landmark model from Dlib
+- 68 point landmark model can also be used but will be resource and time consuming, hence settled for 5 point landmark model
+- 5 points landmarked will be two points on left eye corners, two points on right eye corners and one point on nose tip
+- https://github.com/Gaju27/eva4phase2/blob/master/Session3/E4P2_Face_Alignment.ipynb
+
+<!-- FACE SWAP -->
+## Face Swap
+- We are using Dlib and Open-CV 
+- 68 point landmark model from Dlib is used for shape prediction of face (Detecting landmarks)
+- `dlib.get_frontal_face_detector()` is used for face detection
+- From the shape detected, we will create a [convex hull](https://medium.com/@pascal.sommer.ch/a-gentle-introduction-to-the-convex-hull-problem-62dfcabee90c#:~:text=The%20convex%20hull%20of%20a,convex%20on%20the%20right%20side.)
+- From this convex hull we will create mask then find [Delaunay traingulation](https://en.wikipedia.org/wiki/Delaunay_triangulation#:~:text=In%20mathematics%20and%20computational%20geometry,triangle%20in%20DT(P).) for convex hull points
+- We will impose mask of first face on over second face and perform [seamless clone](https://docs.opencv.org/master/df/da0/group__photo__clone.html)
+- https://github.com/Gaju27/eva4phase2/blob/master/Session3/E4P2S3FaceSwap_of_Trump_and_Kim.ipynb
+
+<!-- WEBPAGE -->
+## Webpage for Restful API CALL and Integrate it with AWS
 
 1. Create an S3 bucket
 2. Upload to S3 bucket - 5-point landmark.dat, js folder, index.html & error.html.
@@ -85,26 +102,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
     - We can take resnet url (assignment1) from S1 API pathway, mobilnet url (assignment 2) from S2 API pathway and face alignment url (assignment) from S3 API pathway we created in AWS.
 11. Accordingly modify index.html inside AWS S3 bucket to accommodate 3 bodies corresponding to 3 functions we created in upload.js
 
-<!-- FACE ALIGNMENT-->
-## Face Alignment
-- In Face Alignment we will accept an input image and make it aligned as if the face is facing the camera
-- We are using 5 point landmark model from Dlib
-- 68 point landmark model can also be used but will be resource and time consuming, hence settled for 5 point landmark model
-- 5 points landmarked will be two points on left eye corners, two points on right eye corners and one point on nose tip
-- https://github.com/Gaju27/eva4phase2/blob/master/Session3/E4P2_Face_Alignment.ipynb
-
-<!-- FACE SWAP -->
-## Face Swap
-- We are using Dlib and Open-CV 
-- 68 point landmark model from Dlib is used for shape prediction of face (Detecting landmarks)
-- `dlib.get_frontal_face_detector()` is used for face detection
-- From the shape detected, we will create a [convex hull](https://medium.com/@pascal.sommer.ch/a-gentle-introduction-to-the-convex-hull-problem-62dfcabee90c#:~:text=The%20convex%20hull%20of%20a,convex%20on%20the%20right%20side.)
-- From this convex hull we will create mask then find [Delaunay traingulation](https://en.wikipedia.org/wiki/Delaunay_triangulation#:~:text=In%20mathematics%20and%20computational%20geometry,triangle%20in%20DT(P).) for convex hull points
-- https://github.com/Gaju27/eva4phase2/blob/master/Session3/E4P2S3FaceSwap_of_Trump_and_Kim.ipynb
-
-<!-- WEBPAGE -->
-## Webpage for Restful API CALL
- [webpage](http://eva4p2-s3-anilbhatt1.s3-website.ap-south-1.amazonaws.com/)
+ [webpage](http://webdocsridevi.s3-website.ap-south-1.amazonaws.com/)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
