@@ -13,6 +13,8 @@
 # Deployment of Resnet, Mobilenet-v2 and Face-Alignment to AWS ![image](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S1_MobileNet_AWS_Lambda_S3_Insomnia/aws.jpg)
 ________
 
+# [Link to Web page for Restful API call](http://webdocsridevi.s3-website.ap-south-1.amazonaws.com/)
+
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
@@ -22,7 +24,7 @@ ________
 * [Mentor](#mentor)
 * [Face Alignment](#face-alignment)
 * [Face Swap](#face-swap)
-* [Webpage](#webpage)
+* [Webpage For Restful Api Call And Integrate It With Aws](#webpage)
 
         
 ## Prerequisites
@@ -102,7 +104,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
     - We can take resnet url (assignment1) from S1 API pathway, mobilnet url (assignment 2) from S2 API pathway and face alignment url (assignment) from S3 API pathway we created in AWS.
 11. Accordingly modify index.html inside AWS S3 bucket to accommodate 3 bodies corresponding to 3 functions we created in upload.js
 
- [webpage](http://webdocsridevi.s3-website.ap-south-1.amazonaws.com/)
+ 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
