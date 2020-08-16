@@ -19,12 +19,12 @@ ________
 ## Table of Contents
 
 * [Prerequisites](#prerequisites)
-* [License](#license)
-* [Group Members](#group-members)
-* [Mentor](#mentor)
 * [Face Alignment](#face-alignment)
 * [Face Swap](#face-swap)
 * [Webpage For Restful Api Call And Integrate It With Aws](#webpage)
+* [License](#license)
+* [Group Members](#group-members)
+* [Mentor](#mentor)
 
 ## Prerequisites
 
