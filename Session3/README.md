@@ -10,7 +10,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-# Face Alignment and Face Swap ![image](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S1_MobileNet_AWS_Lambda_S3_Insomnia/aws.jpg)
+# Deployment of Resnet, Mobilenet-v2 and Face-Alignment to AWS ![image](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S1_MobileNet_AWS_Lambda_S3_Insomnia/aws.jpg)
 ________
 
 <!-- TABLE OF CONTENTS -->
@@ -22,7 +22,7 @@ ________
 * [Mentor](#mentor)
 * [Approach](#Approach)
 * [Face Alignment](#face-alignment)
-* [Face Swamp](#face-swap)
+* [Face Swap](#face-swap)
 * [Webpage](#webpage)
 
         
@@ -32,9 +32,11 @@ ________
 * [Python 3.8](https://www.python.org/downloads/) or Above
 * [AWS Account](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc)
 * [Serverless](https://www.serverless.com/) 
-* [Insomnia](https://insomnia.rest/download/)
 * [Google Colab](https://colab.research.google.com/)
 * [Open-CV](https://pypi.org/project/opencv-python/)
+* [Html](https://www.w3schools.com/html/)
+* [Jquery](https://jquery.com/)
+* [Dlib](http://dlib.net/)
 
 <!-- LICENSE -->
 ## License
@@ -45,7 +47,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Group Members
   - [Gajanana Ganjigatti](https://github.com/gaju27) , [Gaju_on_LinkedIn](https://www.linkedin.com/in/gajanana-ganjigatti/)
   - [Anilkumar N Bhatt](https://github.com/anilbhatt1) , [Anil_on_LinkedIn](https://www.linkedin.com/in/anilkumar-n-bhatt/)
-  - [Maruthi Srinivas](https://github.com/mmaruthi) , [Maruthi_on_LinkedIn](https://www.linkedin.com/in/maruthi-srinivas-m/)
   - [Sridevi B](https://github.com/sridevibonthu) , [Sridevi_on_LinkedIn](https://www.linkedin.com/in/sridevi-bonthu/)
   - [SMAG TEAM](https://github.com/SMAGEVA4/session1/tree/master/Session1) :performing_arts: team github account
 
@@ -63,13 +64,13 @@ Distributed under the MIT License. See `LICENSE` for more information.
 4. Check if existing environment created for S1 & S2 will suffice. If anything additional or downgrading is required, better to create a dedicated environment for S3 alone with these specific requirements.
 5. If not required, activate old environment (S1_mobilenet) itself & proceed.
 6. Prepare handler.py in such a way that it points to correct buckets & correct model_paths we chose from web.
-    Option Chosen from web : Resnet34 Classifier -> Should pick S3_BUCKET eva4p2-s1-anilbhatt1 -> MODEL_PATH s1_resnet34.pt
-    Option Chosen from web : MobileNet_V2 Classifier -> Should pick S3_BUCKET eva4p2-s2-anilbhatt1 -> MODEL_PATH s2_mobilenetv2.pt
-    Option Chosen from web : Facealignment  -> Should pick S3_BUCKET eva4p2-s3-anilbhatt1 -> MODEL_PATH shape_predictor_5_face_landmarks.dat
+   - Option Chosen from web : Resnet34 Classifier -> Should pick S3_BUCKET eva4p2-s1-anilbhatt1 -> MODEL_PATH s1_resnet34.pt
+   - Option Chosen from web : MobileNet_V2 Classifier -> Should pick S3_BUCKET eva4p2-s2-anilbhatt1 -> MODEL_PATH s2_mobilenetv2.pt
+   - Option Chosen from web : Facealignment  -> Should pick S3_BUCKET eva4p2-s3-anilbhatt1 -> MODEL_PATH shape_predictor_5_face_landmarks.dat
 7. Below section in handler.py will need modification to achieve point 6
-    Define environment variables if they are not existing
-    S3_BUCKET = os.environ['S3_BUCKET'] if 'S3_BUCKET' in os.environ else 'sridevi-session1-bucket'
-    MODEL_PATH = os.environ['MODEL_PATH'] if 'MODEL_PATH' in os.environ else 'session1mobilenet.pt'
+   - Define environment variables if they are not existing
+   - S3_BUCKET = os.environ['S3_BUCKET'] if 'S3_BUCKET' in os.environ else 'sridevi-session1-bucket'
+   - MODEL_PATH = os.environ['MODEL_PATH'] if 'MODEL_PATH' in os.environ else 'session1mobilenet.pt'
 8. We will also need to modify below function in handler.py to get back 'Aligned Face' image
     `def get_prediction(image_bytes):
       tensor = transform_image(image_bytes = image_bytes)
@@ -86,15 +87,24 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- FACE ALIGNMENT-->
 ## Face Alignment
+- In Face Alignment we will accept an input image and make it aligned as if the face is facing the camera
+- We are using 5 point landmark model from Dlib
+- 68 point landmark model can also be used but will be resource and time consuming, hence settled for 5 point landmark model
+- 5 points landmarked will be two points on left eye corners, two points on right eye corners and one point on nose tip
 - https://github.com/Gaju27/eva4phase2/blob/master/Session3/E4P2_Face_Alignment.ipynb
 
 <!-- FACE SWAP -->
-## Face Swamp
+## Face Swap
+- We are using Dlib and Open-CV 
+- 68 point landmark model from Dlib is used for shape prediction of face (Detecting landmarks)
+- `dlib.get_frontal_face_detector()` is used for face detection
+- From the shape detected, we will create a [convex hull](https://medium.com/@pascal.sommer.ch/a-gentle-introduction-to-the-convex-hull-problem-62dfcabee90c#:~:text=The%20convex%20hull%20of%20a,convex%20on%20the%20right%20side.)
+- From this convex hull we will create mask then find [Delaunay traingulation](https://en.wikipedia.org/wiki/Delaunay_triangulation#:~:text=In%20mathematics%20and%20computational%20geometry,triangle%20in%20DT(P).) for convex hull points
 - https://github.com/Gaju27/eva4phase2/blob/master/Session3/E4P2S3FaceSwap_of_Trump_and_Kim.ipynb
 
 <!-- WEBPAGE -->
 ## Webpage for Restful API CALL
- http://eva4p2-s3-anilbhatt1.s3-website.ap-south-1.amazonaws.com/
+ [webpage](http://eva4p2-s3-anilbhatt1.s3-website.ap-south-1.amazonaws.com/)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
