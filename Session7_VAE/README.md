@@ -101,7 +101,7 @@ ________
  https://drive.google.com/drive/folders/1SMv5kS5ZrMBbwTO35272Xyw3oB8oCMlE?usp=sharing
 - Input image samples
 
- ![Input Sample Images](https://github.com/Gaju27/eva4phase2/blob/master/S6_GAN/Readme_Contents/Input%20Sample%20images.png)
+ ![Input Sample Images](https://github.com/Gaju27/eva4phase2/blob/master/Session6_GAN/Readme_Contents/Input%20Sample%20images.png)
 
 <!-- DNN Architecture -->
 ## VAE DNN Architecture
