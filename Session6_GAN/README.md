@@ -51,10 +51,10 @@ ________
 - For G also training is done via D. G will generate fake image again and D will predict (Real - 1, Fake - 0). Loss will backpropagate again but this time for G. 
 - Below image will help understand the flow Deep Convolutional GAN (DCGAN)
 
- ![DCGAN Flow](https://github.com/Gaju27/Deep_Learning_EVA4_Phase2/blob/master/Session6_GAN/Readme_Contents/DCGAN%20Flow%20diagram.jpg)
+ ![DCGAN Flow](https://github.com/Gaju27/eva4phase2/blob/master/Session6_GAN/Readme_Contents/DCGAN%20Flow%20diagram.jpg)
 - Below is an example of DCGAN with MNIST
 
- ![DCGAN Example with MNIST](https://github.com/Gaju27/Deep_Learning_EVA4_Phase2/blob/master/Session6_GAN/Readme_Contents/DCGAN%20Flow%20with%20MNIST.jpg)
+ ![DCGAN Example with MNIST](https://github.com/Gaju27/eva4phase2/blob/master/Session6_GAN/Readme_Contents/DCGAN%20Flow%20with%20MNIST.jpg)
 - This work is dealing with generation of Indian cars using DCGAN (Deep Convolutional GANs)
 
 <!-- Data Preparation -->
@@ -63,12 +63,12 @@ ________
 - All cars selected were front facing as shown below with most of the images with white or no background.
 - This selection was done to make the network train with limited resource available via google colab.
 - File creation colab link is as below
- https://github.com/Gaju27/Deep_Learning_EVA4_Phase2/blob/master/Session6_GAN/EVA4_P2_S6_File_Creation.ipynb
+ https://github.com/Gaju27/eva4phase2/blob/master/Session6_GAN/EVA4_P2_S6_File_Creation.ipynb
 - Enitre input dataset that was used for zip file creation can be found in below drive location
  https://drive.google.com/drive/folders/1SMv5kS5ZrMBbwTO35272Xyw3oB8oCMlE?usp=sharing
 - Input image samples
 
- ![Input Sample Images](https://github.com/Gaju27/Deep_Learning_EVA4_Phase2/blob/master/Session6_GAN/Readme_Contents/Input%20Sample%20images.png)
+ ![Input Sample Images](https://github.com/Gaju27/eva4phase2/blob/master/Session6_GAN/Readme_Contents/Input%20Sample%20images.png)
 
 <!-- DNN Architecture -->
 ## DCGAN DNN Architecture
@@ -76,36 +76,36 @@ ________
 - First one adopted on Pytorch tutorial https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html
 - Second one adopted based on https://github.com/Yangyangii/GAN-Tutorial/blob/master/CARS/DCGAN.ipynb
 - Architecture followed was same in both methods. Difference lies in creating labels while training.
-- Refer for receptive field & output size calculations used in architecture - both convolutions and transpose convolutions were used https://github.com/Gaju27/Deep_Learning_EVA4_Phase2/blob/master/Session6_GAN/RF%20Calculator_S6_Modelled%20From_Cars_Mine.xlsx
+- Refer for receptive field & output size calculations used in architecture - both convolutions and transpose convolutions were used https://github.com/Gaju27/eva4phase2/blob/master/Session6_GAN/RF%20Calculator_S6_Modelled%20From_Cars_Mine.xlsx
 - Network architecture for Generator is as follows:
 
-![Generator Architecture](https://github.com/Gaju27/Deep_Learning_EVA4_Phase2/blob/master/Session6_GAN/Readme_Contents/Generator%20Network.jpg)
+![Generator Architecture](https://github.com/Gaju27/eva4phase2/blob/master/Session6_GAN/Readme_Contents/Generator%20Network.jpg)
 
 - Network architecture for Discriminator is as follows:
 
-![Discriminator Architecture](https://github.com/Gaju27/Deep_Learning_EVA4_Phase2/blob/master/Session6_GAN/Readme_Contents/Discriminator%20Network.jpg)
+![Discriminator Architecture](https://github.com/Gaju27/eva4phase2/blob/master/Session6_GAN/Readme_Contents/Discriminator%20Network.jpg)
 
 <!-- Colab Notebook References -->
 ## Colab Notebook References
 -	Colab notebook based on Pytorch tutorial approach. Trained for 2000 epochs. Loss function plotted for 500 to 2000 epochs.
-https://github.com/Gaju27/Deep_Learning_EVA4_Phase2/blob/master/Session6_GAN/EVA4P2_Session6_GAN_V4_Wt_Initialize_Animation_Github.ipynb 
+https://github.com/Gaju27/eva4phase2/blob/master/Session6_GAN/EVA4P2_Session6_GAN_V4_Wt_Initialize_Animation_Github.ipynb 
 -	Animation of images for 500 to 2000 epochs created based on above training can be referred below:
-https://github.com/Gaju27/Deep_Learning_EVA4_Phase2/blob/master/Session6_GAN/animation_2.mp4
+https://github.com/Gaju27/eva4phase2/blob/master/Session6_GAN/animation_2.mp4
 -	Yangyangii approach. Trained for 1400 epochs. Loss function also plotted. Colab notebook reference as below:
-https://github.com/Gaju27/Deep_Learning_EVA4_Phase2/blob/master/Session6_GAN/EVA4P2_Session6_GAN_V4_with_weights_labels_using_torch_ones.ipynb
+https://github.com/Gaju27/eva4phase2/blob/master/Session6_GAN/EVA4P2_Session6_GAN_V4_with_weights_labels_using_torch_ones.ipynb
 -	Colab notebook reference for Yangyangii approach by loading pretrained model from step above. Trained further for 200 epochs & displayed images of cars generated.
-https://github.com/Gaju27/Deep_Learning_EVA4_Phase2/blob/master/Session6_GAN/EVA4P2_Session6_GAN_V5_with_weights_labels_using_torch_ones_Images_Displayed.ipynb
+https://github.com/Gaju27/eva4phase2/blob/master/Session6_GAN/EVA4P2_Session6_GAN_V5_with_weights_labels_using_torch_ones_Images_Displayed.ipynb
 - Images generated based on  Yangyangii approach
 
-![Images Generated](https://github.com/Gaju27/Deep_Learning_EVA4_Phase2/blob/master/Session6_GAN/Readme_Contents/Yangyangii%20Approach_Cars%20Generated.jpg)
+![Images Generated](https://github.com/Gaju27/eva4phase2/blob/master/Session6_GAN/Readme_Contents/Yangyangii%20Approach_Cars%20Generated.jpg)
 
 <!-- Model weight References -->
 ## Model Weight references for future training
 - Refer below locations to download pretrained weights for future.
 - Pytorch tutorial approach
-https://github.com/Gaju27/Deep_Learning_EVA4_Phase2/tree/master/Session6_GAN/Model%20Weights/Pytorch%20Tutorial%20Approach
+https://github.com/Gaju27/eva4phase2/tree/master/Session6_GAN/Model%20Weights/Pytorch%20Tutorial%20Approach
 - Yangyangii approach
-https://github.com/Gaju27/Deep_Learning_EVA4_Phase2/tree/master/Session6_GAN/Model%20Weights/Yangyangii%20Cars%20Example%20Github
+https://github.com/Gaju27/eva4phase2/tree/master/Session6_GAN/Model%20Weights/Yangyangii%20Cars%20Example%20Github
 
 <!-- LICENSE -->
 ## License
@@ -135,6 +135,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
 [issues-url]: https://github.com/othneildrew/Best-README-Template/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://github.com/Gaju27/Deep_Learning_EVA4_Phase2/blob/master/LICENSE.txt
+[license-url]: https://github.com/Gaju27/eva4phase2/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 
